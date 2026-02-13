@@ -176,13 +176,7 @@ This work focuses on automated microbial colony segmentation for:
 3. Temporal tracking consistency
 4. Low-contrast microscopy images
 
-## 📖 Citation
 
-If you use this work, please cite:
-```
-Microbial Segmentation Using Deep Learning
-[Add your institution/publication details]
-```
 
 ## 🛠️ Technical Details
 
@@ -199,22 +193,6 @@ Microbial Segmentation Using Deep Learning
 - **Loss**: BCE + Dice Loss
 - **Hardware**: NVIDIA GPU (12GB+ VRAM recommended)
 
-## 🐛 Troubleshooting
-
-Common issues and solutions:
-- **Out of Memory**: Reduce batch size or image resolution
-- **Poor Segmentation**: Check image preprocessing and normalization
-- **Slow Training**: Ensure CUDA is properly configured
-
-See [TROUBLESHOOTING.md](microbial-segmentation-app/TROUBLESHOOTING.md) for more details.
-
-## 📧 Contact
-
-For questions or collaborations, please open an issue or contact the project maintainers.
-
-## 📄 License
-
-This project is for academic and research purposes.
 
 ---
 
