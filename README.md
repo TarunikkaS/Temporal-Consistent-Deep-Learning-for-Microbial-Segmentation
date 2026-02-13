@@ -193,6 +193,11 @@ This work focuses on automated microbial colony segmentation for:
 - **Loss**: BCE + Dice Loss
 - **Hardware**: NVIDIA GPU (12GB+ VRAM recommended)
 
+### Segmentation
+
+<img width="826" height="253" alt="Screenshot 2026-02-13 at 11 42 12 AM" src="https://github.com/user-attachments/assets/a76d1dea-79cc-426a-ad3d-d45d4b2ecf74" />
+
+<img width="194" height="209" alt="Screenshot 2026-02-13 at 11 42 20 AM" src="https://github.com/user-attachments/assets/07342fcf-b95e-4ea9-8b49-28fb7595c24c" />
 
 ---
 
