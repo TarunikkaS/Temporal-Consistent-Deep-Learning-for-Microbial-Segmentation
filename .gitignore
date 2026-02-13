@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+*.pth.tar
+checkpoints/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Mac specific folders
+__MACOSX/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Zip files
+*.zip
+
+# Environment variables and API keys
+.env
+.env.local
+*.key
+*.pem
+config.ini
+secrets.yaml
+credentials.json
+api_keys.txt
+
+# Log files
+*.log
+logs/
+*.out
+
+# Output directories
+outputs/
+results/
+temp/
+tmp/
+
+# Node modules (for frontend)
+node_modules/
+.next/
+out/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Distribution
+dist/
+.dist/
+
+# Misc
+*.bak
+*.swp
+*.orig
+.cache/

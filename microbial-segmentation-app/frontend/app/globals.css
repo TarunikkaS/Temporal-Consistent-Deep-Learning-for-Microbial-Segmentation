@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================
+   BITCOIN DEFI DESIGN SYSTEM - GLOBAL STYLES
+   ========================================== */
+
+@layer base {
+  /* True Void Background */
+  body {
+    @apply bg-void text-white font-body antialiased;
+  }
+
+  /* Heading Styles */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+
+  /* Remove autofill yellow background */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #0F1115 inset;
+    -webkit-text-fill-color: white;
+  }
+}
+
+@layer components {
+  /* Gradient Text Effect */
+  .gradient-text {
+    @apply bg-gradient-to-r from-bitcoin-orange to-digital-gold bg-clip-text text-transparent;
+  }
+
+  /* Grid Pattern Background (Signature Element) */
+  .bg-grid-pattern {
+    background-size: 50px 50px;
+    background-image:
+      linear-gradient(to right, rgba(30, 41, 59, 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(30, 41, 59, 0.5) 1px, transparent 1px);
+    mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  }
+
+  /* Glass Morphism Effect */
+  .glass-card {
+    @apply bg-black/40 backdrop-blur-lg border border-white/10;
+  }
+
+  /* Holographic Gradient Background */
+  .holographic-gradient {
+    background: linear-gradient(135deg, 
+      rgba(247, 147, 26, 0.1) 0%, 
+      rgba(234, 88, 12, 0.05) 50%, 
+      rgba(255, 214, 0, 0.1) 100%);
+  }
+}
+
+@layer utilities {
+  /* Custom Range Slider Styles - Bitcoin Orange */
+  input[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(to right, #EA580C, #F7931A);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(247, 147, 26, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  input[type='range']::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(247, 147, 26, 0.8);
+  }
+
+  input[type='range']::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(to right, #EA580C, #F7931A);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px rgba(247, 147, 26, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  input[type='range']::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(247, 147, 26, 0.8);
+  }
+
+  input[type='range']::-webkit-slider-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    height: 8px;
+  }
+
+  input[type='range']::-moz-range-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    height: 8px;
+  }
+
+  /* Text Shadow for Glow Effect */
+  .text-glow {
+    text-shadow: 0 0 20px rgba(247, 147, 26, 0.5);
+  }
+
+  /* Animated Gradient Border */
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #EA580C, #F7931A, #FFD600);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030304;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #EA580C, #F7931A);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #F7931A, #FFD600);
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(247, 147, 26, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(247, 147, 26, 0.3);
+  color: white;
+}
